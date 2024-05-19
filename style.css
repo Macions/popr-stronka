@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 20px;
+}
+
+header h1{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+#container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+#container .zadanie{
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container .zadanie .tit-and-descr{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#container .zadanie .tit-and-descr h2,
+#container .zadanie .tit-and-descr .date{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    
+}
+
+#container .zadanie .tit-and-descr .date{
+    background-color: rgba(0, 119, 255, 0.548);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#container .zadanie a{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    border: 1px solid black;
+    padding: 7px 14px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+    transition-duration: .4s;
+}
+
+#container .zadanie a:hover{
+    background-color: black;
+    color: white;
+}
