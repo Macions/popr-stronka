@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
 header{
     width: 100vw;
     text-align: center;
@@ -24,9 +27,10 @@ header h1{
 #container{
     width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 5px;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
 }
 
 #container .zadanie{
@@ -38,6 +42,7 @@ header h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 35px;
 }
 
 #container .zadanie .tit-and-descr{
@@ -59,7 +64,12 @@ header h1{
     border-radius: 5px;
 }
 
-#container .zadanie a{
+#container .zadanie .butt{
+    display: flex;
+    gap: 17px;
+}
+
+#container .zadanie .butt a{
     font-family: 'Ubuntu', sans-serif;
     font-size: 17px;
     border: 1px solid black;
@@ -70,7 +80,16 @@ header h1{
     transition-duration: .4s;
 }
 
-#container .zadanie a:hover{
+#container .zadanie .butt a:hover{
     background-color: black;
     color: white;
+}
+
+#container .kod{
+    font-family: 'Ubuntu', sans-serif;
+    width: 60%;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 9px;
+    border-radius: 4px;
 }
