@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#menu{
+    position: fixed;
+    border: 1px solid black;
+    width: 15.2vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 21rem;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+}
+
+#menu .top{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 8px;
+}
+
+#menu .bottom,
+#menu .top{
+    padding: 10px;
+}
+
+#menu .top h1{
+    font-size: 25px;
+}
+
+#menu .content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+    padding: 10px;
+}
+
+#menu .content ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menu .content ul li#active{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#menu .bottom{
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+
+#menu .bottom p{
+    font-size: 15px;
+}
+
+
+
+
+/* Zawartość */
+
+
+#content {
+    margin-left: 15.2vw;
+    width: calc(100% - 15.2vw);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    gap: 50px;
+}
+
+#content .exercise {
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#content .exercise h1{
+    font-size: 29px;
+}
+
+#content .exercise .date_and_download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+#content .exercise .date_and_download img{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 30%;
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+#content .exercise .date_and_download img:hover{
+    opacity: 1;
+}
+
+.copy{
+    display: none;
+}
+
+@media (max-width: 1288px) {
+    .hide{
+        display: none;
+    }
+    #menu .top{
+        justify-content: center;
+    }
+    #menu .content ul li{
+        justify-content: center;
+    }
+    .copy{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    #menu{
+        width: auto;
+    }
+
+    #content{
+        padding: 5px;
+        padding-top: 30px;
+        margin-left: 7rem;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1078px){
+    #content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 880px) {
+    #content{
+        margin-left: 6rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 674px){
+    #content{
+        margin-left: 5.3rem;
+    }
+}
+
+@media (max-width: 561px){
+    #content{
+        margin-left: 4.8rem;
+    }
+}

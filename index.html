@@ -3,69 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stronka z zadaniami!</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Zadania na lekcje</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>Zadania na lekcje</h1>
-    </header>
-
-    <div id="container">
-        
-        <div class="zadanie">
-            <div class="content">
-
-            </div>
-            <div class="tit-and-descr">
-                <h2 class="title">Zadanie na: </h2>
-                <div class="date">20.05.2024</div>
+    <div class="bg">
+        <div class="container">
+            <div class="text">
+                <h1>Wybierz jedną z poniższych opcji:</h1>
             </div>
 
-            <div class="butt">
-                <a href="popr praca domowa na 20-05-2024.cpp" download="zadanie-20-05.cpp">Pobierz</a>
-                <!-- <a href="#">Podgląd</a> -->
+            <div class="options">
+                <div class="option">
+                    <h2>Podstawy programowania</h2>
+                    <p>Zadania z podstaw programowania: prace domowe i zadania na lekcjach.</p>
+                    <a href="/popr/school.html">Więcej</a>
+                </div>
+
+                <div class="option">
+                    <h2>Informatyka</h2>
+                    <p>Zadania z informatyki.</p>
+                    <a href="/informatyka/index.html">Więcej</a>
+                </div>
             </div>
-
-        </div>
-
-        <div class="kod">
-            #include &lt;iostream&gt;<br>
-            using namespace std;<br><br>
-            int ilosc(int cyfra){<br>
-                int ilosc_liczb=0;<br><br>
-                if(cyfra == 0){<br>
-                    return 1;<br>
-                }<br><br>
-                while(cyfra != 0){<br>
-                    ilosc_liczb++;<br>
-                    cyfra/=10;<br>
-                }<br><br>
-                return ilosc_liczb;<br>
-            }<br><br>
-            int main() {<br>
-                int liczba;<br>
-                cin >> liczba;<br><br>
-                cout << ilosc(liczba);<br><br>
-                return 0;<br>
-            }<br>
-
-        </div>
-
-        <div class="zadanie">
-            <div class="content">
-
-            </div>
-            <div class="tit-and-descr">
-                <h2 class="title">Informatyka Bartek zadanie na: </h2>
-                <div class="date">21.05.2024</div>
-            </div>
-
-            <div class="butt">
-                <a href="bartek.svg" download="bartek-zadanie-informatyka.svg">Pobierz</a>
-                <!-- <a href="#">Podgląd</a> -->
-            </div>
-
         </div>
     </div>
 </body>
