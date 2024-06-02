@@ -87,7 +87,7 @@ body{
 }
 
 .bg .container .options .option:nth-child(1)::after{
-    content: url(/imgs/arrow-right.svg);
+    content: url(/popr-stronka/imgs/arrow-right.svg);
     position: absolute;
     left: -4rem;
     animation: hophop 1.7s infinite;
@@ -109,7 +109,7 @@ body{
 }
 
 .bg .container .options .option:nth-child(2)::after{
-    content: url(/imgs/arrow-left.svg);
+    content: url(/popr-stronka/imgs/arrow-left.svg);
     position: absolute;
     right: -4rem;
     animation: hophophop 1.7s infinite;
