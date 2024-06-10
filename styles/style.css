@@ -125,3 +125,24 @@ body{
         transform: translateX(0px);
     }
 }
+
+
+.key{
+    border: 1px solid white;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    opacity: 20%;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.key:hover{
+    opacity: 50%;
+}
+
+.key img{
+    width: 22px;
+}
